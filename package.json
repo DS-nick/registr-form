@@ -12,7 +12,6 @@
     "eslint-config-google": "*"
   },
   "dependencies": {
-    
     "config": "^3.0.1",
     "expect": "*",
     "fs-extra": "*",
@@ -25,21 +24,18 @@
     "koa-bodyparser": "*",
     "koa-convert": "*",
     "koa-csrf": "*",
-    "koa-favicon": "*",
+    "koa-favicon": "^2.0.1",
     "koa-jwt": "*",
     "koa-logger": "*",
     "koa-passport": "*",
     "koa-router": "*",
     "koa-session": "*",
     "koa-session-mongoose": "*",
-    
     "koa-static": "*",
     "lodash": "*",
     "mime": "*",
-    
     "mz": "*",
     "nedb": "^1.8.0",
-    
     "passport-facebook": "*",
     "passport-jwt": "*",
     "passport-local": "*",
@@ -50,7 +46,6 @@
     "request-promise": "*",
     "selenium-webdriver": "*",
     "should": "*",
-    
     "yargs": "*"
   }
 }

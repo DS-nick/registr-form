@@ -7,8 +7,9 @@ const session = require('koa-session')
 const bodyParser = require('koa-bodyparser')
 const passport = require('koa-passport')
 const pug = require('pug')
+const favicon = require('koa-favicon');
 
-
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 const Router = require('koa-router');
 const router = new Router();
