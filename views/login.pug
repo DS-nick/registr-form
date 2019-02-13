@@ -1,0 +1,19 @@
+doctype html
+head
+  link(rel='stylesheet' href='style.css')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title
+.registr-form
+  .registr-form-child
+    form(action='/login' method='post')
+      p
+        label
+          | Почта   
+          input(type='text' name='email' value='test@mail.ru')
+      p
+        label
+          | Пароль
+          input(type='password' name='password' value='test')
+      p
+        button(type='submit') Войти

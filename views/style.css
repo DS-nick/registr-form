@@ -1,0 +1,39 @@
+.registr-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+   height: 100%;
+   width: 100%
+}
+
+.registr-form-child {
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px
+}
+
+form {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 50%;
+}
+input {
+    height: 30px;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    
+}
+button {
+    
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    border-radius: 3px;
+    background-color: cadetblue;
+    height: 40px;
+}

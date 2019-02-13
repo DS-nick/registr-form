@@ -1,0 +1,56 @@
+{
+  "name": "node-materials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint **/*.js",
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-google": "*"
+  },
+  "dependencies": {
+    
+    "config": "^3.0.1",
+    "expect": "*",
+    "fs-extra": "*",
+    "gulp": "*",
+    "gulp-nodemon": "*",
+    "jsonwebtoken": "*",
+    "juice": "*",
+    "jwt-simple": "*",
+    "koa": "*",
+    "koa-bodyparser": "*",
+    "koa-convert": "*",
+    "koa-csrf": "*",
+    "koa-favicon": "*",
+    "koa-jwt": "*",
+    "koa-logger": "*",
+    "koa-passport": "*",
+    "koa-router": "*",
+    "koa-session": "*",
+    "koa-session-mongoose": "*",
+    
+    "koa-static": "*",
+    "lodash": "*",
+    "mime": "*",
+    
+    "mz": "*",
+    "nedb": "^1.8.0",
+    
+    "passport-facebook": "*",
+    "passport-jwt": "*",
+    "passport-local": "*",
+    "pug": "^2.0.3",
+    "randomstring": "*",
+    "redis": "*",
+    "request": "*",
+    "request-promise": "*",
+    "selenium-webdriver": "*",
+    "should": "*",
+    
+    "yargs": "*"
+  }
+}
