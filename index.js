@@ -1,6 +1,7 @@
 const app = require('./app')
-const config = require('config')
+// const config = require('config')
+var port = process.env.PORT || 3000;
 
-app.listen(config.get('port'), ()=> {
+app.listen(port, ()=> {
     console.log('server listen port 3000')
 })
