@@ -35,7 +35,7 @@ const fetchUser = (() => {
         if (email === user.email && password === user.password) {
           done(null, user);
         } else {
-          done(null, false);
+          done(null, false, {message: 'Вы ввели неверный пароль или email, введите test@mail.ru'});
         }
       })
       .catch((err) => { done(err) });

@@ -72,7 +72,7 @@ router.post('/login',
   passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/',
-    failureFlash: 'Вы ввели неверный пароль введите, test@mail.ru',
+    failureFlash: true,
     successFlash: true
     
   })
