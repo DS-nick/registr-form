@@ -4,13 +4,15 @@ head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title
+  include messages
+  
 .registr-form
   .registr-form-child
     form(action='/login' method='post')
       p
         label
           | Почта   
-          input(type='text' name='email' value='test@mail.ru')
+          input(type='text' name='email' value='test1@mail.ru')
       p
         label
           | Пароль

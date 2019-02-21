@@ -18,8 +18,8 @@ const LocalStrategy = require('passport-local').Strategy;
 app.keys = ['session key']
 app.use(session(app));
 app.use(bodyParser())
-
-
+require('./handlers/templates').init(app);
+require('./handlers/09-flash').init(app);
 app.use(passport.initialize())
 app.use(passport.session())
 
@@ -51,8 +51,9 @@ router.get('/', async (ctx, next)=> {
     // ctx.body = fs.createReadStream('./views/welcome.html');
 
   }else {
-    ctx.body =pug.renderFile(__dirname + '/views/login.pug')
-    // console.log('get req')
+    ctx.flash('success', 'поздравляем, вы выиграли джек-пот!');
+    ctx.body = ctx.render('login.pug')
+    console.log(ctx.flash('success', 'поздравляем, вы выиграли джек-пот!'))
     // ctx.type = 'html'
     //   ctx.body = fs.createReadStream('./views/login.html')
   }
@@ -71,7 +72,7 @@ router.post('/login',
   passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/',
-    failureFlash: true, // ctx.flash()
+    failureFlash: 'Вы ввели неверный пароль введите, test@mail.ru',
     successFlash: true
     
   })

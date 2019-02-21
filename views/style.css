@@ -37,3 +37,18 @@ button {
     background-color: cadetblue;
     height: 40px;
 }
+button:hover,
+button:active {
+background-color: white;
+color: #154042;
+cursor: pointer;
+}
+
+.alert-danger {
+    background-color: rgba(255,0,0,0.3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 0 auto;
+}
